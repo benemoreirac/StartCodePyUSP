@@ -14,5 +14,13 @@ while dado != 0:
     if dado != 0:
         lista_principal.append(dado)
 
+clone_correto = lista_principal[:]
+
+
 print("Lista Principal: ", lista_principal)
 print("Lista Clone: ", clone(lista_principal))
+
+print("Clone correto: ", clone_correto)
+
+
+
