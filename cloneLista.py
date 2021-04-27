@@ -22,5 +22,11 @@ print("Lista Clone: ", clone(lista_principal))
 
 print("Clone correto: ", clone_correto)
 
+print(" 3 listas COncatenadas", lista_principal + clone_correto )
+
+del clone_correto[1:4]
+
+print("Lista excluida: 1:4 ", clone_correto)
+
 
 
