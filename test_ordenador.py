@@ -1,5 +1,6 @@
 import ordenador
 import pytest
+import conta_tempos
 
 class TestaOrdendaor:
     @pytest.fixture
@@ -8,12 +9,12 @@ class TestaOrdendaor:
 
     @pytest.fixture
     def l_quase(self):
-        c = ContaTempos()
+        c = conta-tempos.ContaTempos()
         return c.lista_quase_ordenado(100)
 
     @pytest.fixture
     def l_aleatoria(self):
-        c = ContaTempos()
+        c = conta_tempos.ContaTempos()
         return c.lista_aleatoria(100)
 
     def esta_ordenada(self, l):
@@ -24,4 +25,4 @@ class TestaOrdendaor:
 
     def test_bolha_curta_aleat(self, o, l_aleat):
         o.bolha_curta(l_aleat)
-        assert self.esta_ordenado(l_aleat)
+        assert self.esta_ordenada(l_aleat)
